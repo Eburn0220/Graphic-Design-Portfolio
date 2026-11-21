@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Emmanuel Burnett's graphic design résumé and selected projects.">
+<title>Emmanuel Burnett | Graphic Design</title>
+<style>
+:root{--paper:#f5f3eb;--ink:#192822;--line:#b9bdb1;--lime:#cfeb86;--quiet:#46584f}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif}h1,h2,h3,p,figure{margin:0}a{color:inherit;text-underline-offset:.2em}a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.wrap{width:min(1080px,calc(100% - 48px));margin:auto}header{background:var(--ink);color:var(--paper)}nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid #f5f3eb59}.nav-links{display:flex;gap:24px}nav a{text-decoration:none}nav a:hover{text-decoration:underline}button{font:inherit;font-weight:650;background:var(--lime);color:var(--ink);border:0;padding:8px 14px;cursor:pointer}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;padding:clamp(26px,5vw,62px) 0}.eyebrow,h2{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750}.eyebrow{color:var(--lime);margin-bottom:8px}h1{font-size:clamp(34px,7.5vw,94px);letter-spacing:-.07em;line-height:.94;animation:arrive 420ms ease-out both}.tile{width:clamp(55px,13vw,145px);aspect-ratio:1;display:grid;place-items:center;background:var(--lime);color:var(--ink);clip-path:polygon(0 0,80% 0,100% 20%,100% 100%,0 100%);animation:arrive 450ms ease-out both}.tile svg{width:58%}@keyframes arrive{from{opacity:0;transform:translateY(8px)}}
+.resume{margin-top:32px;border:1px solid var(--line)}.section-head{padding:10px 16px;background:var(--ink);color:var(--paper)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.cell{padding:16px;min-width:0;border-bottom:1px solid var(--line)}.cell:nth-child(odd){border-right:1px solid var(--line)}.cell:nth-last-child(-n+2){border-bottom:0}h3{font-size:1rem;line-height:1.3;margin-bottom:6px}.cell p+p{margin-top:4px}.quiet,figcaption{color:var(--quiet);font-size:.9rem}.wide{grid-column:1/-1}.cell.wide{border-right:0;border-bottom:1px solid var(--line)}
+.work{margin:32px 0 40px}.gallery{display:grid;grid-template-columns:1fr 1.35fr;gap:12px;margin-top:12px}.gallery figure{border:1px solid var(--line);padding:10px;background:white;display:grid;grid-template-rows:1fr auto}.gallery a{display:grid;place-items:center;overflow:hidden;min-height:0}.gallery img{display:block;width:100%;height:100%;max-height:310px;object-fit:contain;transition:transform 240ms ease}.gallery a:hover img,.gallery a:focus-visible img{transform:scale(1.025)}figcaption{padding-top:8px}.project-caption{margin:12px 0}.files{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0;margin:12px 0 0;list-style:none}.files a{display:flex;justify-content:space-between;gap:6px;border:1px solid var(--line);padding:8px 11px;text-decoration:none;transition:background-color 160ms ease}.files a:hover,.files a:focus-visible{background:var(--lime)}.files small{white-space:nowrap}
+@media(max-width:560px){.wrap{width:calc(100% - 28px)}.grid,.files{grid-template-columns:1fr}.cell:nth-child(odd){border-right:0}.cell:nth-last-child(2){border-bottom:1px solid var(--line)}.gallery{grid-template-columns:1fr}.resume,.work{margin-top:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.gallery a:hover img,.gallery a:focus-visible img{transform:none}}
+@page{size:letter;margin:.55in}@media print{body,header,.section-head,.tile{color:black;background:white}.wrap{width:100%}nav,.work{display:none}.hero{padding:0 0 14pt}.eyebrow{color:black}h1{font-size:34pt}.tile{width:.55in}.resume{margin-top:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cell{break-inside:avoid;padding:10pt;font-size:10pt}.quiet{font-size:9pt;color:black}*{animation:none!important;transition:none!important}}
+.nav-links{flex-wrap:wrap;column-gap:24px;row-gap:6px}
+.featured-art{margin-bottom:0}
+.featured-art h3{font-size:clamp(1.25rem,3vw,1.75rem)}
+.featured-art .gallery img{max-height:380px}
+/* Crop the right-hand card from the 1450 by 725 orientation study. */
+.front-card{position:relative;place-self:center;width:min(100%,275px);aspect-ratio:432 / 596;overflow:hidden;transform:rotate(180deg)}
+.featured-art .gallery .front-card img{position:absolute;left:-224.537%;top:-6.0403%;width:335.6481%;height:auto;max-height:none}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<nav aria-label="Portfolio navigation"><div class="nav-links"><a href="#resume">Résumé</a><a href="#featured-art">Featured art</a><a href="#work">Selected work</a></div><button id="print" type="button">Print / Save PDF</button></nav>
+<div class="hero"><div><p class="eyebrow">Graphic Design · Identity &amp; Illustration</p><h1>Emmanuel Burnett</h1></div>
+<div class="tile"><svg viewBox="0 0 120 104" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M0 0H92C108 0 120 12 120 28C120 37 116 45 110 50C117 55 120 63 120 74C120 91 108 104 92 104H0Z M18 18H54V41H18Z M18 59H54V86H18Z M72 18H90C97 18 102 23 102 30S97 41 90 41H72Z M72 59H90C98 59 103 65 103 73S98 86 90 86H72Z"/></svg></div></div>
+</div></header>
+<main class="wrap">
+<section class="work featured-art" aria-labelledby="featured-art">
+<h2 class="section-head" id="featured-art">Featured Art</h2>
+<div class="project-caption"><h3>Ex Libris</h3><p>A mirrored owl illustrated as a playing-card bookplate, with three orientations exploring how the composition changes when rotated.</p></div>
+<div class="gallery">
+<figure>
+<div class="front-card"><img src="./assets/ex-libris-study.webp" alt="Front view of the Ex Libris owl card" loading="lazy"></div>
+<figcaption>Front view</figcaption>
+</figure>
+<figure><a href="./assets/ex-libris-study-corrected.svg"><img src="./assets/ex-libris-study-corrected.svg" alt="Owl bookplate shown in three orientations" loading="lazy"></a><figcaption>Orientation study</figcaption></figure>
+</div>
+</section>
+<section class="resume" aria-labelledby="resume"><h2 class="section-head" id="resume">Résumé</h2>
+<div class="grid">
+<div class="cell wide" id="experience"><h3>Experience</h3><p><strong>Freelance Graphic Designer</strong> · Designed logos for small businesses.</p></div>
+<div class="cell"><h3>Education</h3><p><strong>BFA, Graphic Design</strong></p><p class="quiet">Mississippi College · Expected May 2027</p></div>
+<div class="cell"><h3>Skills</h3><p>Logo design, illustration, photography</p><p class="quiet">Illustrator, Photoshop, InDesign · HTML, CSS, CSS animation</p></div>
+<div class="cell"><h3>Selected Awards</h3><p>State Art Show · 2nd and 3rd, 2021</p><p>Hinds Community College Student Art Gallery · 2nd, 2021</p></div>
+<div class="cell"><h3>Business Reference</h3><p><strong>Apollo Threads</strong></p><p><a href="https://apollo-threads.com/">apollo-threads.com</a> · <a href="tel:+16018325812">601-832-5812</a></p></div>
+</div></section>
+<section class="work" aria-labelledby="work"><h2 class="section-head" id="work">Selected Work</h2>
+<ul class="files" aria-label="Project presentations">
+<li><a href="./assets/small-business-design-studies.pdf">Small Business Design Studies<small>PDF ↗</small></a></li>
+<li><a href="./assets/brand.pdf">Major Brand Face-Lift<small>PDF ↗</small></a></li>
+<li><a href="./assets/better.pdf">Make It Better<small>PDF ↗</small></a></li>
+<li><a href="./assets/logo.pdf">Logo Warmup<small>PDF ↗</small></a></li>
+</ul></section></main>
+<script>document.getElementById("print").addEventListener("click",()=>window.print());</script>
+</body></html>
